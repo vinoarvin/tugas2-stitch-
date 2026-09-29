@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#00354a", "on-secondary-fixed": "#00174b", "on-primary-fixed-variant": "#004f53", "tertiary-fixed": "#c4e7ff", "tertiary": "#f6faff", "on-surface": "#dfe2ee", "on-error-container": "#ffdad6", "on-background": "#dfe2ee", "on-secondary": "#002a78", "secondary-container": "#0053db", "surface-dim": "#0f131c", "on-primary": "#003739", "on-primary-container": "#006c71", "surface-container": "#1c2028", "secondary-fixed": "#dbe1ff", "secondary": "#b4c5ff", "surface": "#0f131c", "on-secondary-container": "#cdd7ff", "primary-fixed": "#63f7ff", "inverse-surface": "#dfe2ee", "surface-container-low": "#181c24", "on-tertiary-fixed": "#001e2c", "surface-container-highest": "#31353e", "primary-container": "#00f5ff", "surface-container-lowest": "#0a0e16", "error-container": "#93000a", "primary": "#e9feff", "on-tertiary-fixed-variant": "#004c69", "on-surface-variant": "#b9caca", "inverse-primary": "#00696e", "outline": "#849495", "on-secondary-fixed-variant": "#003ea8", "on-error": "#690005", "primary-fixed-dim": "#00dce5", "surface-container-high": "#262a33", "on-tertiary-container": "#00688e", "inverse-on-surface": "#2c3039", "error": "#ffb4ab", "surface-variant": "#31353e", "on-primary-fixed": "#002021", "secondary-fixed-dim": "#b4c5ff", "tertiary-fixed-dim": "#7bd0ff", "outline-variant": "#3a494a", "surface-bright": "#353942", "background": "#0f131c", "tertiary-container": "#b8e3ff", "surface-tint": "#00dce5" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin": "3rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem" }, fontFamily: { "display-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "code-sm": ["JetBrains Mono"], "label-mono": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "label-md": ["Inter"] }, fontSize: { "display-xl-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }], "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }], "code-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "label-mono": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "display-xl": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }], "code-md": ["14px", { lineHeight: "20px", fontWeight: "500" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="overview" href="#"><img alt="Digital CV Neon Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VXZJ0tM_a3QHij2f2xEqFM-SfS0FAnc-kXYDwwVnZSRv8mGCnOthEajlVmpaLyrXhL3RHbhourON5iMO1pIZePQuH4NfqTVF1K_a6WSMnandhXkWydZ41HHe-JSlfPTjnKUhx3UCQO6T7GepKpJRxKtHYEDz9vjntKfRuXOkKNFA7BizbwZ-lqJTz4I-a6i5VxUwnQV1Fbc-SimrAdSEU7UgHU8_kKmkJG1HoD0OQfPZgvfUFeGLAPf4Vf"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">DEV_CORE</span></a><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low shadow-[0_0_12px_rgba(0,245,255,0.15)]"><span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f5ff] animate-pulse"></span><span class="font-label-mono text-label-mono text-primary-fixed-dim uppercase tracking-wider">Available for Hire</span></div></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="overview" href="#">Overview</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills-and-projects" href="#">Skills &amp; Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="achievements" href="#">Achievements</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="education" href="#">Education</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center px-space-md py-space-xs rounded-lg font-code-sm text-code-sm text-primary bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_0_16px_rgba(0,245,255,0.25)]" href="#">Download CV</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_8px_rgba(0,245,255,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy_WaJqxUumz7pGLSG8cybak0QIsXbkAbpz02aC5_Q8TE7OcYLRoEdel9N_nJ5viuwSCCa6aZ9F9rUvVPvhgoDILoRV07O7mgmbEXdnjzTIXHuL2cEesCIEtaGjt0F5CF6QUh5_e7rf7Q0T_BBNl9zZ9OOltOmnJNty3edQeb9ueidIUXid_MzcKAkPXo4jeGqEBosnJHD1tsOfxyvjsr-1QgRyFAibmucy6erPyF-6kyfLm0dAojPAw"/></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Top System Telemetry Bar -->
+<div class="w-full mb-8 rounded-xl bg-surface-container-low shadow-[0_4px_30px_rgba(0,0,0,0.5)] p-4 sm:p-5 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></div>
+<span class="font-code-sm text-code-sm text-primary tracking-wider uppercase font-semibold">CANDIDATE_DATA_FEED // ENCRYPTED NODE</span>
+<span class="hidden md:inline-block px-2 py-0.5 rounded bg-surface-container text-outline text-label-mono font-label-mono">HASH: 0x9F4C2E...88B1</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="font-label-mono text-label-mono text-outline">UPTIME:</span>
+<span class="font-code-sm text-code-sm text-primary-fixed-dim">99.98%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-mono text-label-mono text-outline">LOCATION:</span>
+<span class="font-code-sm text-code-sm text-on-surface">JAKARTA, ID [WIB / GMT+7]</span>
+</div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="font-label-mono text-label-mono text-outline">CURRENT_ROLE:</span>
+<span class="font-code-sm text-code-sm text-primary-container">SR. FULL STACK ARCHITECT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main 4-Column High-Precision Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
+<!-- =================================================================== -->
+<!-- KOLOM 1: Profil Pribadi, Identitas & Saluran Kontak Lengkap          -->
+<!-- =================================================================== -->
+<section class="flex flex-col gap-6">
+<!-- Profile Card Primary -->
+<div class="relative rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] group hover:shadow-[0_0_24px_rgba(0,245,255,0.18)] transition-all duration-300">
+<!-- Ambient luminous edge -->
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/60 to-transparent"></div>
+<!-- Avatar Container with Neon Halo -->
+<div class="relative w-full aspect-square max-w-[260px] mx-auto mb-6 rounded-2xl overflow-hidden bg-surface-container-high shadow-[0_0_20px_rgba(0,245,255,0.15)] ring-1 ring-primary-container/30">
+<img class="w-full h-full object-cover object-center filter contrast-105" data-alt="Professional studio portrait of an Indonesian male tech architect in his late twenties wearing a tailored dark charcoal tech jacket, modern computational laboratory setting, soft atmospheric neon cyan and deep blue backlight, focused and confident expression, ultra-sharp detail, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6MhnxDSdRLpk5biyd9qNou7DuenIHAMs9OX2BlCOCLmku47Xuu3RvuODwuRNSQJvT8giVQNDISjRKxcDrHxi8VLw1BEVwuSsYmskcpoqlW46iFUUpWKWhvH7ynN8b-ju_IE5iVbVnDnP7ViPxTZatcxzI74RkvzOar5PQs0cNLQUQ6Nj_B-W0IPWjMAlsHeaJRQ9eDDpwz9HIIqR32Rk_2YZbokVkhIXVrdsHvfynkQM2XkalVTFDYg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-mono text-label-mono uppercase tracking-wider">
+                ID: AP-9614
+              </span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-mono text-label-mono font-bold">
+                VERIFIED
+              </span>
+</div>
+</div>
+<!-- Name & Designation -->
+<div class="text-left space-y-2 mb-4">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-high shadow-[0_0_12px_rgba(0,245,255,0.1)]">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_6px_#00f5ff]"></span>
+<span class="font-code-sm text-code-sm text-primary-fixed-dim uppercase tracking-wider font-semibold">Open to Full-time &amp; Remote</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Alex Pratama, <span class="text-primary-fixed-dim">S.Kom.</span></h1>
+<p class="font-headline-sm text-headline-sm text-secondary tracking-normal">Senior Full Stack Architect &amp; Cloud Engineer</p>
+</div>
+<!-- Bio Snippet -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Senior software systems engineer passionate about highly scalable distributed microservices, low-latency transaction pipelines, and state-of-the-art interactive web interfaces. Bridging raw performance with frictionless UX.
+          </p>
+<!-- Core Call to Actions -->
+<div class="flex flex-col gap-3">
+<button class="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-headline-sm text-headline-sm text-on-primary-container bg-gradient-to-r from-primary-container to-secondary-container hover:brightness-110 shadow-[0_0_20px_rgba(0,245,255,0.35)] transition-all duration-200">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Resume (PDF)</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-headline-sm text-headline-sm text-primary bg-surface-container hover:bg-surface-container-high shadow-[0_0_12px_rgba(0,245,255,0.1)] transition-all duration-200">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Send Message</span>
+</button>
+</div>
+</div>
+<!-- Structured Contact Registry -->
+<div class="relative rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)]">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim">contact_mail</span>
+              Direct Communications
+            </h2>
+<span class="font-label-mono text-label-mono text-outline">NODE_SEC</span>
+</div>
+<div class="flex flex-col divide-y divide-surface-container-highest/40">
+<!-- Email -->
+<div class="py-3 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">alternate_email</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Electronic Mail</span>
+<a class="font-code-md text-code-md text-primary hover:underline truncate block" href="mailto:alex.pratama@techcraft.dev">alex.pratama@techcraft.dev</a>
+</div>
+</div>
+<!-- GitHub -->
+<div class="py-3 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-outline uppercase block">GitHub Forge</span>
+<a class="font-code-md text-code-md text-primary hover:underline truncate block" href="https://github.com" target="_blank">github.com/alexpratama-dev</a>
+</div>
+</div>
+<!-- LinkedIn -->
+<div class="py-3 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Professional Graph</span>
+<a class="font-code-md text-code-md text-primary hover:underline truncate block" href="https://linkedin.com" target="_blank">linkedin.com/in/alexpratama</a>
+</div>
+</div>
+<!-- Phone / WhatsApp -->
+<div class="py-3 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Voice / WhatsApp</span>
+<span class="font-code-md text-code-md text-on-surface">+62 812-3456-7890</span>
+</div>
+</div>
+<!-- Web Portfolio -->
+<div class="py-3 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">language</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Web Portfolio</span>
+<a class="font-code-md text-code-md text-primary-container hover:underline truncate block" href="#">alexpratama.io</a>
+</div>
+</div>
+<!-- Location & Birth Date -->
+<div class="py-3 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-outline uppercase block">Base of Operations</span>
+<span class="font-body-md text-body-md text-on-surface block">Jakarta Selatan, ID (GMT+7)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block mt-0.5">Born 14 March 1996 (28 y/o)</span>
+</div>
+</div>
+</div>
+<!-- Language Proficiency Pill Matrix -->
+<div class="mt-4 pt-4 border-t border-surface-container-highest/50">
+<span class="font-label-mono text-label-mono text-outline uppercase block mb-2">Linguistic Fluency</span>
+<div class="flex flex-wrap gap-2">
+<div class="px-3 py-1 rounded bg-surface-container flex items-center gap-1.5 shadow-[0_0_8px_rgba(0,245,255,0.08)]">
+<span class="font-code-sm text-code-sm text-primary">ID</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Indonesia (Native)</span>
+</div>
+<div class="px-3 py-1 rounded bg-surface-container flex items-center gap-1.5 shadow-[0_0_8px_rgba(0,245,255,0.08)]">
+<span class="font-code-sm text-code-sm text-primary-fixed-dim">EN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">English (Professional)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =================================================================== -->
+<!-- KOLOM 2: Keahlian & Core Skills Matrix                              -->
+<!-- =================================================================== -->
+<section class="flex flex-col gap-6">
+<!-- Column Header Panel -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative overflow-hidden">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-mono text-label-mono text-primary-fixed-dim uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              SKILLSET_MATRIX v4.2
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline text-label-mono font-label-mono">EVAL_03.24</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Technical Expertise &amp; Skills</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-stack proficiency index computed across production systems &amp; architectures.</p>
+</div>
+<!-- Category: Frontend & User Interface Engineering -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">web</span>
+              Frontend &amp; UI Architecture
+            </h3>
+<span class="font-label-mono text-label-mono text-primary-container">94% AVG</span>
+</div>
+<div class="space-y-4">
+<!-- React 19 / Next.js 15 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">React 19 &amp; Next.js 15 (App Router)</span>
+<span class="font-code-sm text-code-sm text-primary">95%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[95%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- TypeScript & Ecosystem -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">TypeScript (Strict Typings &amp; Generics)</span>
+<span class="font-code-sm text-code-sm text-primary">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[92%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- Tailwind CSS & Design Tokens -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">Tailwind CSS &amp; Radix/Design Tokens</span>
+<span class="font-code-sm text-code-sm text-primary">96%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[96%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- WebGL / Three.js / Canvas -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">WebGL, Three.js &amp; GLSL Shaders</span>
+<span class="font-code-sm text-code-sm text-primary">85%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[85%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- Vue.js & Nuxt 3 -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">Vue.js 3 &amp; Nuxt Ecosystem</span>
+<span class="font-code-sm text-code-sm text-primary">88%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[88%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+</div>
+<div class="mt-5 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">Zustand</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">TanStack Query</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">Framer Motion</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">Vite</span>
+</div>
+</div>
+<!-- Category: Backend, Cloud & Distributed Systems -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">dns</span>
+              Backend &amp; Cloud Infra
+            </h3>
+<span class="font-label-mono text-label-mono text-primary-container">91% AVG</span>
+</div>
+<div class="space-y-4">
+<!-- Go / Golang -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">Go (Golang High-Concurrency APIs)</span>
+<span class="font-code-sm text-code-sm text-primary">94%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[94%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- Node.js & TypeScript -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">Node.js / Express / NestJS</span>
+<span class="font-code-sm text-code-sm text-primary">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[92%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- AWS Cloud Infrastructure -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">AWS (EKS, Lambda, SQS, RDS, IAM)</span>
+<span class="font-code-sm text-code-sm text-primary">90%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[90%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- PostgreSQL & Redis -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">PostgreSQL &amp; Redis Cluster</span>
+<span class="font-code-sm text-code-sm text-primary">93%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[93%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+<!-- Kubernetes & Docker -->
+<div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-code-md text-code-md text-on-surface">Docker Containers &amp; Kubernetes (K8s)</span>
+<span class="font-code-sm text-code-sm text-primary">88%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-primary-container to-primary-fixed w-[88%] shadow-[0_0_10px_#00f5ff]"></div>
+</div>
+</div>
+</div>
+<div class="mt-5 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">gRPC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">Apache Kafka</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">Terraform</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary-fixed-dim">Prometheus</span>
+</div>
+</div>
+<!-- Architecture & Leadership Matrix -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">architecture</span>
+            Engineering Leadership &amp; Design
+          </h3>
+<div class="grid grid-cols-2 gap-3">
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-code-sm text-code-sm text-primary">Event-Driven Architecture</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CQRS, Saga pattern, Kafka</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-code-sm text-code-sm text-primary">CI/CD GitOps</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GitHub Actions, ArgoCD</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-code-sm text-code-sm text-primary">Technical Mentorship</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Team scaling &amp; code reviews</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-code-sm text-code-sm text-primary">Agile Architecture</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Product roadmaps &amp; RFCs</span>
+</div>
+</div>
+</div>
+</section>
+<!-- =================================================================== -->
+<!-- KOLOM 3: Proyek Unggulan / Projects Showcase                        -->
+<!-- =================================================================== -->
+<section class="flex flex-col gap-6">
+<!-- Column Header Panel -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative overflow-hidden">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-mono text-label-mono text-primary-fixed-dim uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              PRODUCTION_RELEASES
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-mono text-label-mono">3 FEATURED</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Featured Projects &amp; Innovations</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High-throughput microservices, WebGL dashboards, and low-latency web apps.</p>
+</div>
+<!-- Project 1: NexusPay Payment Gateway -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative group hover:shadow-[0_0_24px_rgba(0,245,255,0.2)] transition-all duration-300">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/50 to-transparent"></div>
+<div class="flex items-start justify-between gap-3 mb-3">
+<div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-mono text-label-mono uppercase tracking-wider">
+                FINTECH_CORE // HIGH SCALE
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1">NexusPay Gateway</h3>
+</div>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" href="#" title="Source Code">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="p-2 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors" href="#" title="Live System">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+            A distributed payment processing cluster with sub-50ms latency SLAs. Handles over 500,000 transactions daily with atomic consistency, distributed idempotency keys, and automated failover orchestration.
+          </p>
+<!-- Metrics Panel -->
+<div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg bg-surface-container-lowest">
+<div>
+<span class="font-label-mono text-label-mono text-outline uppercase block">RELIABILITY SLA</span>
+<span class="font-code-md text-code-md text-primary-container font-bold">99.99% Uptime</span>
+</div>
+<div>
+<span class="font-label-mono text-label-mono text-outline uppercase block">LATENCY GAIN</span>
+<span class="font-code-md text-code-md text-primary-fixed-dim font-bold">-40% P99 Response</span>
+</div>
+</div>
+<!-- Stack Tags -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Go</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Kafka</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Docker</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">AWS EKS</span>
+</div>
+</div>
+<!-- Project 2: OmniCloud AI Dashboard -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative group hover:shadow-[0_0_24px_rgba(0,245,255,0.2)] transition-all duration-300">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/50 to-transparent"></div>
+<div class="flex items-start justify-between gap-3 mb-3">
+<div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-mono text-label-mono uppercase tracking-wider">
+                ENTERPRISE // AI-OPS
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1">OmniCloud AI Dashboard</h3>
+</div>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" href="#" title="Source Code">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="p-2 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors" href="#" title="Live System">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+            Next-generation enterprise analytics console with AI-driven telemetry anomalies. Features a reactive 3D WebGL infrastructure topology graph, streaming logs with virtual lists, and fine-grained RBAC controls.
+          </p>
+<!-- Metrics Panel -->
+<div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg bg-surface-container-lowest">
+<div>
+<span class="font-label-mono text-label-mono text-outline uppercase block">ENTERPRISE ADOPTION</span>
+<span class="font-code-md text-code-md text-primary-container font-bold">12+ Global Teams</span>
+</div>
+<div>
+<span class="font-label-mono text-label-mono text-outline uppercase block">RENDER PERF</span>
+<span class="font-code-md text-code-md text-primary-fixed-dim font-bold">60 FPS WebGL</span>
+</div>
+</div>
+<!-- Stack Tags -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Next.js 15</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Three.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">FastAPI</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Tailwind</span>
+</div>
+</div>
+<!-- Project 3: Synapse Decentralized Asset Exchange UI -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative group hover:shadow-[0_0_24px_rgba(0,245,255,0.2)] transition-all duration-300">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/50 to-transparent"></div>
+<div class="flex items-start justify-between gap-3 mb-3">
+<div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-mono text-label-mono uppercase tracking-wider">
+                WEB3 // HIGH FREQUENCY
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-1">Synapse DEX Exchange</h3>
+</div>
+<div class="flex items-center gap-2">
+<a class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" href="#" title="Source Code">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="p-2 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary-container text-primary transition-colors" href="#" title="Live System">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+            High-performance web trading interface featuring real-time WebSocket order book depth, bespoke canvas charting engine, wallet connection hooks, and optimized gas estimation contracts.
+          </p>
+<!-- Metrics Panel -->
+<div class="grid grid-cols-2 gap-3 mb-4 p-3 rounded-lg bg-surface-container-lowest">
+<div>
+<span class="font-label-mono text-label-mono text-outline uppercase block">FEED LATENCY</span>
+<span class="font-code-md text-code-md text-primary-container font-bold">&lt; 15ms Socket Sync</span>
+</div>
+<div>
+<span class="font-label-mono text-label-mono text-outline uppercase block">TRADING VOLUME</span>
+<span class="font-code-md text-code-md text-primary-fixed-dim font-bold">$45M+ Transacted</span>
+</div>
+</div>
+<!-- Stack Tags -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">ethers.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">WebSockets</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-code-sm text-primary">Tailwind CSS</span>
+</div>
+</div>
+</section>
+<!-- =================================================================== -->
+<!-- KOLOM 4: Prestasi, Penghargaan & Riwayat Pendidikan                -->
+<!-- =================================================================== -->
+<section class="flex flex-col gap-6">
+<!-- Column Header Panel -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative overflow-hidden">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-mono text-label-mono text-primary-fixed-dim uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              ACADEMIC &amp; HONORS
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline text-label-mono font-label-mono">CERT_AUTH</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Achievements &amp; Education</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Formal academic credentials, industry hackathon victories, and professional certificates.</p>
+</div>
+<!-- Section: Education History Timeline -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="flex items-center justify-between mb-5">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">school</span>
+              Academic Background
+            </h3>
+<span class="font-label-mono text-label-mono text-outline">GRADUATE</span>
+</div>
+<!-- Vertical Timeline with Glowing Nodes -->
+<div class="relative pl-6 space-y-6 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[1px] before:bg-gradient-to-b before:from-primary-container before:via-secondary-container before:to-surface-container-highest">
+<!-- Master's Degree (S2) -->
+<div class="relative group">
+<!-- Glowing Dot -->
+<div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_#00f5ff]"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-primary-fixed-dim">2020 — 2022</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary-container font-label-mono text-label-mono font-bold">CUM LAUDE</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">M.Sc. in Computer Science (S2)</h4>
+<p class="font-body-md text-body-md text-secondary">Institut Teknologi Bandung (ITB)</p>
+<div class="mt-2 p-3 rounded-lg bg-surface-container text-body-sm text-on-surface-variant space-y-1">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-outline">CUMULATIVE GPA:</span>
+<span class="text-primary font-bold">3.92 / 4.00</span>
+</div>
+<p class="pt-1 border-t border-surface-container-highest/40 text-on-surface leading-tight">
+<span class="text-primary-fixed-dim font-medium">Thesis:</span> Distributed Consensus Protocols and Adaptive Partitioning in Sub-Second Financial Microservices.
+                </p>
+</div>
+</div>
+<!-- Bachelor's Degree (S1) -->
+<div class="relative group">
+<!-- Glowing Dot -->
+<div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-secondary shadow-[0_0_8px_#b4c5ff]"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-secondary">2014 — 2018</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono text-label-mono">DISTINCTION</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">B.Sc. in Computer Science (S1)</h4>
+<p class="font-body-md text-body-md text-secondary">Universitas Indonesia (UI)</p>
+<div class="mt-2 p-3 rounded-lg bg-surface-container text-body-sm text-on-surface-variant space-y-1">
+<div class="flex justify-between font-code-sm text-code-sm">
+<span class="text-outline">CUMULATIVE GPA:</span>
+<span class="text-primary font-bold">3.86 / 4.00</span>
+</div>
+<p class="pt-1 border-t border-surface-container-highest/40 text-on-surface leading-tight">
+<span class="text-primary-fixed-dim font-medium">Focus:</span> Software Engineering, Data Structures, and Distributed Operating Systems.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Honors & Industry Awards -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">emoji_events</span>
+              Honors &amp; Recognitions
+            </h3>
+<span class="font-label-mono text-label-mono text-outline">PRIZES</span>
+</div>
+<div class="space-y-3">
+<!-- Award 1 -->
+<div class="p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container-highest text-primary-container shrink-0 shadow-[0_0_10px_rgba(0,245,255,0.2)]">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-primary-fixed-dim uppercase">1ST PLACE WINNER // 2023</span>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base leading-snug">National Cloud Architecture Hackathon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Organized by Kementerian Kominfo &amp; Amazon Web Services (AWS) Indonesia.</p>
+</div>
+</div>
+</div>
+<!-- Award 2 -->
+<div class="p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container-highest text-primary-container shrink-0 shadow-[0_0_10px_rgba(0,245,255,0.2)]">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-mono text-label-mono text-secondary uppercase">KEYNOTE SPEAKER // 2022</span>
+<h4 class="font-headline-sm text-headline-sm text-primary text-base leading-snug">Jakarta Tech Summit: Scaling K8s</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Delivered deep-dive workshop on zero-downtime microservices deployments to 1,200+ engineers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Active Cloud Certifications -->
+<div class="rounded-2xl bg-surface-container-low p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] relative">
+<div class="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px]">verified</span>
+              Cloud Certifications
+            </h3>
+<span class="font-label-mono text-label-mono text-primary-container">PRO TIER</span>
+</div>
+<div class="space-y-3">
+<!-- AWS SAP -->
+<div class="p-3 rounded-xl bg-surface-container border-l-2 border-primary-container">
+<div class="flex items-center justify-between mb-1">
+<span class="font-code-md text-code-md text-primary font-semibold">AWS Solutions Architect - Professional</span>
+<span class="font-label-mono text-label-mono text-primary-container">ACTIVE</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant font-code-sm">
+<span>ID: AWS-SAP-C02-98442</span>
+<span class="text-outline">Exp: Dec 2026</span>
+</div>
+</div>
+<!-- GCP DevOps -->
+<div class="p-3 rounded-xl bg-surface-container border-l-2 border-secondary-container">
+<div class="flex items-center justify-between mb-1">
+<span class="font-code-md text-code-md text-primary font-semibold">Google Cloud Professional DevOps Engineer</span>
+<span class="font-label-mono text-label-mono text-secondary">ACTIVE</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant font-code-sm">
+<span>ID: GCP-PDE-119280</span>
+<span class="text-outline">Exp: Aug 2025</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Command Bar / Live Status Terminal -->
+<div class="w-full mt-8 rounded-xl bg-surface-container-lowest p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_4px_24px_rgba(0,0,0,0.8)] relative overflow-hidden">
+<div class="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_10px_#00f5ff]"></div>
+<div class="flex flex-col">
+<span class="font-code-md text-code-md text-primary font-medium">READY_FOR_ENGAGEMENT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Looking for Principal Engineer, Lead Architect, or Senior Staff roles.</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-mono text-label-mono text-outline hidden lg:inline">RESPONSE_TIME &lt; 4 HOURS</span>
+<a class="px-5 py-2.5 rounded-lg bg-surface-container text-primary hover:bg-primary-container hover:text-on-primary-container font-code-sm text-code-sm font-semibold transition-all shadow-[0_0_16px_rgba(0,245,255,0.15)] flex items-center gap-2" href="mailto:alex.pratama@techcraft.dev">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+          Initiate Contact via Email
+        </a>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest relative"><div class="h-[1px] w-full bg-gradient-to-r from-transparent via-primary-container/40 to-transparent shadow-[0_0_12px_rgba(0,245,255,0.3)]"></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm text-on-surface-variant">SYSTEM // v2.6.4</span><span class="font-label-mono text-label-mono text-outline">[ONLINE]</span></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center">© 2024 Engineering Architecture • All Rights Reserved</div><div class="font-code-sm text-code-sm text-primary-fixed-dim hover:text-primary transition-colors cursor-pointer">SECURE_NODE_OK</div></div></footer></body></html>
